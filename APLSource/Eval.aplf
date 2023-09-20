@@ -1,0 +1,7 @@
+ Eval←{
+     80≠⎕DR ⍵:⍵
+     ⎕USING←,⊂'System.Drawing,System.Drawing.dll'
+     ⎕USING,←⊂'Causeway,sharpplot.dll'
+     q←''''
+     ⍎q@('"'∘=)⍵
+ }

@@ -1,0 +1,16 @@
+ BuildChart←{
+     ⍝ ⍺ ←→ Chart
+     ⍝ ⍵ ←→ Data
+     ⍝ ← ←→ SVG
+     p←⎕NS ⍺
+     p.Names←⍵.Names
+     p.Values←⍵.Values
+     p.⎕USING←,⊂',sharpplot.dll'
+     p.Chart←p.⎕NEW p.Causeway.SharpPlot p.Size
+     p.PropertyList←GetPropList p.Chart
+     p.EnumPropertyList←¯1↓¨GetEnumPropList 0
+     p.MethodList←GetMethodList p.Chart
+     _←Select p
+     _←(⍎'Create',p.ChartType)p
+     p.(Chart.RenderSvg Causeway.SvgMode⍎Scale)
+ }

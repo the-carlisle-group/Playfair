@@ -1,0 +1,10 @@
+ DrawGanttChart←{
+     s←⍵.Chart
+     c←0⊃⍵.SelectedValues
+     y←1+⍳≢c
+     x←2↑1↓⍵.SelectedValues
+     _←s.SetYLabels do⊂(⊂''),c
+     _←s.SetValueTags do⊂c
+     _←SetState ⍵
+     s.DrawGanttChart do(⊂y),x
+ }

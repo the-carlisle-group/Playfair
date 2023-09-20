@@ -1,0 +1,14 @@
+ DrawBarChart←{
+     s←⍵.Chart
+     m←⍵.Multi
+     x←1↑⍵.SelectedValues
+     y←1↓⍵.SelectedValues
+     n←1↓⍵.SelectedNames
+     k←(1<≢y)∧~m
+     _←s.SetXLabels do x
+     _←s.SetKeyText do⊂k/n
+     _←s.SetPageLabels do⊂m/n
+     _←SetState ⍵
+     m:s.DrawMultiple do ⍵.Causeway.ChartType.BarChart y
+     s.DrawBarChart do⊂y
+ }

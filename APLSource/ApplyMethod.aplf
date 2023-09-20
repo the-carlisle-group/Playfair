@@ -1,0 +1,9 @@
+ ApplyMethod←{
+     n v←⍵
+     f←⍎'⍺.Chart.',n
+     a←Eval v
+     ⍝ If simple string, better test to enclose?
+     ⍝ If simple numeric vec?
+     5 11::f do⊂a
+     f do a
+ }
