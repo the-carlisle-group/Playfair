@@ -1,0 +1,11 @@
+ GanttChart4Data←{
+     t←⎕NS''
+     ⍝ t.Values←⊂1 2 2 1 2 2 3 1 2 3
+     t.Values←⊂'M',¨⍕¨1 2 2 1 2 2 3 1 2 3
+     t.Values,←⊂0.5,0.52083,0.60278,0.57291,0.5243,0.62986,0.6041,0.5694,0.5,0.5
+     t.Values,←⊂0.5694,0.5243,0.62986,0.6667,0.6028,0.6667,0.6667,0.57291,0.52083,0.6041
+  ⍝ t.Values,←⊂state = new int[] {2,2,2,3,3,3,3,1,1,1};
+     t.Values,←⊂3 4 3/'Out of Action' 'Running acceptably' 'Running well'
+     t.Names←'Machine' 'StartTime' 'EndTime'
+     t
+ }

@@ -1,0 +1,8 @@
+ GanttChart1Data←{
+     t←⎕NS''
+     t.Values←⊂'Clear ground' 'Dig drains' 'Lay foundations' 'Concrete floors'
+     t.Values,←⊂24 28 34 50
+     t.Values,←⊂30 36 48 54
+     t.Names←'Activity' 'StartWeek' 'EndWeek'
+     t
+ }

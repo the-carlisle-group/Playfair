@@ -1,0 +1,3 @@
+ GetColumn←{
+     (⍺.Names⍳⊂⍵)⊃⍺.Values
+ }

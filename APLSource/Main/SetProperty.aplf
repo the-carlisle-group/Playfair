@@ -1,0 +1,4 @@
+ SetProperty←{
+     n v←⍵
+     0⊣⍎'⍺.Chart.',n,'←v'
+ }

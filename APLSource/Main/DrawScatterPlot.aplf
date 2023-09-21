@@ -1,0 +1,16 @@
+ DrawScatterPlot←{
+     s←⍵.Chart
+     m←⍵.Multi
+     n←⍵.SelectedNames
+     v←⍵.SelectedValues
+     x←0⊃v
+     y←1↓v
+     c←≢y
+     k←(1<≢y)∧~m
+     s.XCaption←0⊃⍵.SelectedNames
+     s.YCaption←(c=1)/1⊃⍵.SelectedNames
+     _←s.SetKeyText do⊂k/1↓n
+     _←SetState ⍵
+     m:DrawMultiple do ⍵.Causeway.ChartType.ScatterPlot y
+     s.DrawScatterPlot do y x
+ }

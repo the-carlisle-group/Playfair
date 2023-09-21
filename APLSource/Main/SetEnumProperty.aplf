@@ -1,0 +1,8 @@
+ SetEnumProperty←{
+     n v←⍵
+     v←','(≠⊆⊢)v
+     0=≢v:0
+     v←n∘{'.'∊⍵:⍵ ⋄ ⍺,'s.',⍵}¨v
+     e←+/⍺.Causeway⍎¨v
+     0⊣⍎'⍺.Chart.',n,'←e'
+ }

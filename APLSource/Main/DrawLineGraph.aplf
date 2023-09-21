@@ -1,0 +1,16 @@
+ DrawLineGraph←{
+     s←⍵.Chart
+     m←⍵.Multi
+     xd←0⊃⍵.Values
+     y←1↓⍵.Values
+     k←(1<≢y)∧~m
+     n←1↓⍵.Names
+     c←2=≡xd
+     x←c⊃xd(xd⍳xd)
+     _←s.SetXLabels do⊂c/xd
+     _←s.SetKeyText do⊂k/n
+     _←s.SetPageLabels do⊂m/n
+     _←SetState ⍵
+     m:s.DrawMultiple do ⍵.Causeway.ChartType.LineGraph y
+     s.DrawLineGraph do y x
+ }

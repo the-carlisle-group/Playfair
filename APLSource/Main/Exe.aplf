@@ -1,0 +1,12 @@
+ Exe←{
+     ⍝ ⍺ ←→ (⍺.Causeway ⍺.Chart)
+     ⍝ ⍵ ←→ Name, Value
+     n v←⍵
+     (⊂n)∊'SplitBy' 'GroupBy':⍺ ApplyMethod n(⍺ GetColumn v)
+     n t←⍺ GetType n
+     t=0:0
+     t=1:⍺ SetEnumProperty n v
+     t=2:⍺ SetProperty n v
+     t=3:⍺ ApplyMethod n v
+     t=4:⍺ Draw n v
+ }

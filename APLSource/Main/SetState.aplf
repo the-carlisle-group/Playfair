@@ -1,0 +1,5 @@
+ SetState←{
+     n←⍵.⎕NL ¯2
+     v←⍵⍎¨n
+     ⍵ Exe¨↓⍉↑n v
+ }

@@ -1,0 +1,8 @@
+ BarChart1Data←{
+     v←⊂'Project'('A2' '18' 'Q5' 'T6' 'T8' '32')
+     v,←⊂'Last Year'(6 18 27 31 40 43)
+     v,←⊂'This Year'(17 33 42 54 71 78)
+     d←⎕NS''
+     d.(Names Values)←↓⍉⊃v
+     d
+ }

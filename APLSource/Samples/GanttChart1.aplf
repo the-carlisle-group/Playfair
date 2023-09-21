@@ -1,0 +1,9 @@
+ GanttChart1←{
+     p←##.Main.New 0
+     p.ChartType←'GanttChart'
+     p.Heading←'Work Schedule'
+     p.MarginLeft←72
+     p.XTickMarks←5
+     p.YAxisStyle←'ForceZero,GridLines'
+     p
+ }

@@ -1,0 +1,9 @@
+ Select←{
+     ⍵.SelectedNames←⍵.Names
+     ⍵.SelectedValues←⍵.Values
+     ⍵.Select≡'':0
+     n←','(≠⊆⊢)⍵.Select
+     ⍵.SelectedNames←n
+     ⍵.SelectedValues←⍵.Values[⍵.Names⍳n]
+     0
+ }

@@ -1,0 +1,13 @@
+ GanttChart2←{
+     p←##.Main.New 0
+     p.ChartType←'GanttChart'
+     p.Heading←'Work in Progress'
+     p.HeadingStyle←'HeadingStyles.Right'
+     p.Select←'Activity,StartWeek,EndWeek'
+     p.ValueFont←'''Arial'' 8 FontStyle.Bold'
+     p.GanttChartStyle←'GanttChartStyles.ValueTags'
+     p.YAxisStyle←'YAxisStyles.ForceZero,YAxisStyles.GridLines,YAxisStyles.NoLabels'
+     p.XTickMarks←5
+     p.SplitBy←'Status'
+     p
+ }

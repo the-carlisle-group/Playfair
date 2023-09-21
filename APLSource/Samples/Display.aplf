@@ -1,0 +1,5 @@
+ Display←{
+     h←'hr'⎕WC'HTMLRenderer'
+     hr.HTML←⍵
+     0
+ }

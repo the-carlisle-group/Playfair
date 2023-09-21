@@ -1,9 +1,12 @@
  DrawGanttChart←{
      s←⍵.Chart
      c←0⊃⍵.SelectedValues
-     y←1+⍳≢c
+     v←∪c
+     y←1+c⍳⍨v
      x←2↑1↓⍵.SelectedValues
-     _←s.SetYLabels do⊂(⊂''),c
+     ⍝ _←s.SetYLabels do⊂(⊂''),v
+     _←s.SetYLabels do⊂v
+
      _←s.SetValueTags do⊂c
      _←SetState ⍵
      s.DrawGanttChart do(⊂y),x

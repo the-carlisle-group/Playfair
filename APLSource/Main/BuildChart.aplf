@@ -7,10 +7,10 @@
      p.Values←⍵.Values
      p.⎕USING←,⊂',sharpplot.dll'
      p.Chart←p.⎕NEW p.Causeway.SharpPlot p.Size
-     p.PropertyList←GetPropList p.Chart
+     p.PropertyList←p.Chart.⎕NL ¯2
      p.EnumPropertyList←¯1↓¨GetEnumPropList 0
-     p.MethodList←GetMethodList p.Chart
+     p.MethodList←p.Chart.⎕NL ¯3
      _←Select p
-     _←(⍎'Create',p.ChartType)p
+     _←(⍎'Draw',p.ChartType)p
      p.(Chart.RenderSvg Causeway.SvgMode⍎Scale)
  }

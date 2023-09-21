@@ -1,0 +1,20 @@
+ GanttChart4←{
+     p←##.Main.New 0
+     p.ChartType←'GanttChart'
+     p.Heading←'Machine Status Summary'
+     p.ChartBackground←'Color.Silver FillStyle.Halftone'
+     p.Colors←'Color.Maroon Color.Olive Color.Green'
+     p.FillStyles←'FillStyle.Pipe'
+     p.XAxisStyle←'Time,GridLines,ArrowedAxis'
+     p.YAxisStyle←'ExactFit'
+     p.YRange←0.5 3.5
+     p.YTickMarks←1
+     p.XRange←12 16÷24
+     p.BarEdgeNib←0
+     ⍝ p.YLabelFormat←'##'
+     p.XTimeFormat←'HH:mm'
+     p.SplitBy←'State'
+     p.BarWidths←0.5
+     p.Select←'Machine,StartTime,EndTime'
+     p
+ }

@@ -1,0 +1,10 @@
+ DrawHistogram←{
+     s←⍵.Chart
+     m←⍵.Multi
+     v←⍵.Values
+     n←⍵.Names
+     _←s.SetPageLabels do⊂m/n
+     _←SetState ⍵
+     m:s.DrawMultiple do ⍵.Causeway.ChartType.Histogram v
+     s.DrawHistogram do(1↑v)
+ }

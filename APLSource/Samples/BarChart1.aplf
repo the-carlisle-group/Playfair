@@ -1,0 +1,15 @@
+ BarChart1←{
+     c←##.Main.New 0
+     c.ChartType←'BarChart'
+     c.Heading←'Comparative Spend 2004-5'
+     c.BarChartStyle←'TicksBetween,ValueTags,ForceZero'
+     c.XAxisStyle←'XAxisStyles.MiddleLabels,XAxisStyles.GridLines'
+     c.ValueTagStyle←'Vertical,Inside,SectorValues,RecolorOutside'
+     c.ValueFont←'"Arial" 10 FontStyle.Bold Color.LightYellow'
+     c.ValueTagFormat←'###0 Units'
+     c.Gap←0
+     c.GroupGap←0.5
+     c.Colors←'Color.Green Color.Maroon'
+     c.XLabelFormat←'Proj-XX'
+     c
+ }

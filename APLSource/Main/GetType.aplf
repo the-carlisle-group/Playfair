@@ -1,0 +1,8 @@
+ GetType←{
+     ⍺.EnumPropertyList∊⍨⊂⍵:⍵ 1
+     ⍺.PropertyList∊⍨⊂⍵:⍵ 2
+     ⍺.MethodList∊⍨⊂'Set',⍵:('Set',⍵)3
+     ⍺.MethodList∊⍨⊂⍵:⍵ 3
+     'Draw'≡4↑⍵:⍵ 4
+     ⍵ 0
+ }
