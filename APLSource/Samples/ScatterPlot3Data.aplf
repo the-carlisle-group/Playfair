@@ -1,0 +1,3 @@
+ ScatterPlot3Data←{
+     ScatterPlot1Data 0
+ }

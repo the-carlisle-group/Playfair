@@ -1,0 +1,12 @@
+ LineGraph1←{
+     p←##.Main.New 0
+     p.Heading←'Plot of MPG against Miles Run'
+     p.ChartType←'LineGraph'
+     p.LineGraphStyle←'LineGraphStyles.TrendLine,LineGraphStyles.OnTopModel'
+     p.XTickMarks←5000
+     p.Flexibility←5
+     p.MissingValue←0
+     p.PenWidths←0.8 1.2
+     p.KeyText←'Raw MPG data' 'Gaussian smooth'
+     p
+ }

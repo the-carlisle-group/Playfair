@@ -1,6 +1,6 @@
  New←{
      p←⎕NS''
-     p.Size←360 240
+     p.Size←1.5×360 240
      p.Multi←0
      p.Scale←'Shadowed'
      p.Select←''

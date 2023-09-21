@@ -1,0 +1,9 @@
+ ScatterPlot3←{
+     p←##.Main.New 0
+     p.ChartType←'ScatterPlot'
+     p.Heading←'Maybe Logs would help?'
+     p.YAxisStyle←'LogScale,AtEndCaption'
+     p.XAxisStyle←'LogScale'
+     p.ScatterPlotStyle←'GridLines'
+     p
+ }

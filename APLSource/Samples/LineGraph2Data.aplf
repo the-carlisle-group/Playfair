@@ -1,0 +1,8 @@
+ LineGraph2Data←{
+     t←⎕NS''
+     t.Values←⊂↓12 3⍴'JanFebMarAprMayJunJulAugSepOctNovDec'
+     t.Values,←⊂18,16,21,22,21,27,23,24,27,24,23,18
+     t.Values,←⊂4,4,3,4,5,7,12,9,8,3,3,2
+     t.Names←'Month' 'Home' 'Export'
+     t
+ }

@@ -1,0 +1,10 @@
+ LineGraph2←{
+     p←##.Main.New 0
+     p.Heading←'Total Monthly Sales by Region'
+     p.ChartType←'LineGraph'
+     p.LineGraphStyle←'SurfaceShading'
+     p.DataStyle←'Relative'
+     p.YAxisStyle←'ForceZero'
+     p.PenWidths←0.1
+     p
+ }

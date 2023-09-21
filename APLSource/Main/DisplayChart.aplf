@@ -1,4 +1,0 @@
- DisplayChart←{
-     h←'hr'⎕WC'HTMLRenderer'
-     hr.HTML←⍵
- }

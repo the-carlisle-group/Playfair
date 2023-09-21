@@ -1,0 +1,11 @@
+ ScatterPlot2←{
+     p←##.Main.New 0
+     p.ChartType←'ScatterPlot'
+     p.Heading←'How Does Area Affect Price?'
+     p.ScatterPlotStyle←'ModelFit,GridLines,ExplodeAxes'
+     p.YAxisStyle←'AtEndCaption'
+     p.YFactor←1000
+     p.OrderOfFit←2
+     p.EquationFormat←'Price = C0 + C1×area + C2×area²'
+     p
+ }

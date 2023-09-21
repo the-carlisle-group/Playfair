@@ -1,0 +1,18 @@
+ ScatterPlot4←{
+     p←##.Main.New 0
+     p.ChartType←'ScatterPlot'
+     p.Heading←'Split by House Type'
+     p.Select←'Area,Price'
+     p.YAxisStyle←'AtEndCaption'
+     p.YFactor←1000
+     p.XCaption←'Floor Area (sq ft)'
+     p.SplitBy←'HouseType'
+     p.ScatterPlotStyle←'ModelFit'
+     p.EquationStyle←'SpanData'
+     p.Markers←'Marker.Block Marker.Lozenge Marker.Triangle Marker.Bullet'
+     p.Colors←'2/Color.Gray Color.Firebrick Color.Navy Color.ForestGreen'
+     p.LineStyles←'LineStyle.Dash'
+     p.KeyText←'Terrace' '' 'Semi' '' 'Detached' '' 'Bungalow'
+     p.PenWidths←1.2
+     p
+ }
