@@ -1,0 +1,8 @@
+ MinMaxChart0←{
+     p←##.Main.New 0
+     p.ChartType←'MinMaxChart'
+     p.Heading←'Directional min-max showing drift'
+     p.PenWidths←10
+     p.MinMaxChartStyle←'ArrowLines,DriftMarkers,ExplodeAxes'
+     p
+ }

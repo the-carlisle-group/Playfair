@@ -1,0 +1,7 @@
+ DrawMinMaxChart←{
+     s←⍵.Chart
+     m←⍵.Multi
+     x l h←3↑⍵.SelectedValues
+     _←SetState ⍵
+     s.DrawMinMaxChart do l h x
+ }

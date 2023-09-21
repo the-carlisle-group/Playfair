@@ -1,0 +1,8 @@
+ MinMaxChart0Data←{
+     t←⎕NS''
+     t.Values←⊂17,18,19,22,23,24
+     t.Values,←⊂190,150,310,240,140,170
+     t.Values,←⊂150,310,240,140,170,240
+     t.Names←'Time' 'Open' 'Close'
+     t
+ }
