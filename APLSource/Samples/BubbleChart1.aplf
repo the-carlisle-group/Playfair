@@ -1,0 +1,13 @@
+ BubbleChart1←{
+     p←##.Main.New 0
+     p.ChartType←'BubbleChart'
+     p.Heading←'Incident count'
+     p.SetXTickMarks←5
+     p.SetYTickMarks←50
+     p.Markers←'Marker.Bullet'
+     p.MarkerScales←5
+     p.BubbleChartStyle←'GridLines,ValueTags'
+     p.ValueFont←'"Times New Roman" 12 FontStyle.Bold Color.Red'
+     p.KeyText←'"Number of Incidents"'
+     p
+ }

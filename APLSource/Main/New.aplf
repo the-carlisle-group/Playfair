@@ -1,5 +1,6 @@
  New←{
      p←⎕NS''
+     p.ChartType←⍵
      p.Size←1.5×360 240
      p.Multi←0
      p.Scale←'Shadowed'

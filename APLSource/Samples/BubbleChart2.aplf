@@ -1,0 +1,14 @@
+ BubbleChart2←{
+     p←##.Main.New 0
+     p.ChartType←'BubbleChart'
+     p.Heading←'Two Experiments Compared'
+     p.Markers←'Marker.Bullet'
+     p.MarkerScales←5                                          ⍝  ↓↓↓↓ arg needs ⊂
+     p.Colors←'Color.Orange,Color.Blue '  ⍝ ColorTranslator.FromHtml("#80006666")'
+     p.BubbleChartStyle←'GridLines,ExplodeAxes'
+     ⍝ p.KeyText←'Old method' 'New method'   ⍝ Cant really allow this. Need to provide a delimited string or must be provided in table.
+     ⍝ Or just make the Tpe column text, so labels show up with no effort.
+     p.Select←'XValues,YValues,Count'
+     p.SplitBy←'Type'
+     p
+ }

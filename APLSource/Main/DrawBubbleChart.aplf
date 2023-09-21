@@ -1,0 +1,7 @@
+ DrawBubbleChart←{
+     s←⍵.Chart
+     m←⍵.Multi
+     x y c←3↑⍵.SelectedValues
+     _←SetState ⍵
+     s.DrawBubbleChart do y x c
+ }

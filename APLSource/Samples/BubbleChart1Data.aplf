@@ -1,0 +1,8 @@
+ BubbleChart1Data←{
+     t←⎕NS''
+     t.Values←⊂17,31,29,14,16,24
+     t.Values,←⊂190,270,310,120,190,230
+     t.Values,←⊂12,65,77,7,9,112
+     t.Names←'XValues' 'YValues' 'Count'
+     t
+ }

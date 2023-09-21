@@ -2,8 +2,8 @@
      ⍝ ⍺ ←→ (⍺.Causeway ⍺.Chart)
      ⍝ ⍵ ←→ Name, Value
      n v←⍵
-     (⊂n)∊'SplitBy' 'GroupBy':⍺ ApplyMethod n(⍺ GetColumn v)
      n t←⍺ GetType n
+     (⊂n)∊'SplitBy' 'GroupBy' 'SetValueTags':⍺ ApplyMethod n(⍺ GetColumn v)
      t=0:0
      t=1:⍺ SetEnumProperty n v
      t=2:⍺ SetProperty n v
