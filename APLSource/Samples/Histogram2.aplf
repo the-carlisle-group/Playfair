@@ -1,0 +1,12 @@
+ Histogram2←{
+     p←##.Main.New 0
+     p.ChartType←'Histogram'
+     p.Heading←'3 Dice Throws (Grouped)'
+     p.HistogramStyle←'SurfaceShading,ValueTags'
+     p.FillStyles←'FillStyle.GradientBottom'
+     p.SetValueFont←'"Arial" 10 FontStyle.Bold'
+     p.XRange←3 18
+     p.ClassInterval←2
+     p.XTickMarks←2
+     p
+ }

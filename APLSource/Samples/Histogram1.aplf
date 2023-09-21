@@ -1,0 +1,9 @@
+ Histogram1←{
+     p←##.Main.New 0
+     p.ChartType←'Histogram'
+     p.Heading←'Sum of 3 Dice Throws'
+     p.HistogramStyle←'SurfaceShading'
+     p.XRange←3 18
+     p.XAxisStyle←'MiddleLabels'
+     p
+ }

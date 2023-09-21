@@ -1,0 +1,12 @@
+ Histogram4←{
+     p←##.Main.New 0
+     p.ChartType←'Histogram'
+     p.Heading←'Histogram with Normal curve'
+     p.HistogramStyle←'SurfaceShading,Risers,NormalCurve'
+     p.FillStyles←'FillStyle.Halftone'
+     p.PenWidths←2
+     p.SetXRange←3 18
+     p.ClassInterval←3
+     p.XTickMarks←3
+     p
+ }

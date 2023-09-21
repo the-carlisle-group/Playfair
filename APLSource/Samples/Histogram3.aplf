@@ -1,0 +1,10 @@
+ Histogram3←{
+     p←##.Main.New 0
+     p.ChartType←'Histogram'
+     p.Heading←'Histogram with Exploded Axes'
+     p.HistogramStyle←'Risers,ExplodeAxes'
+     p.SetXRange←3 18
+     p.ClassInterval←2
+     p.XTickMarks←2
+     p
+ }

@@ -1,0 +1,3 @@
+ Histogram2Data←{
+     Histogram1Data 0
+ }
