@@ -1,0 +1,51 @@
+ BarleyData←{
+
+     Year←1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931
+     Year,←1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931
+     Year,←1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931 1931
+     Year,←1931 1931 1931 1931 1931 1931 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932
+     Year,←1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932
+     Year,←1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932 1932
+     Year,←1932 1932 1932 1932 1932 1932
+
+     Farm←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris'
+     Farm,←'Crookston' 'Grand Rapids' 'Duluth' 'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+     Farm,←'University Farm' 'Waseca' 'Morris' 'Crookston' 'Grand Rapids' 'Duluth'
+
+     Variety←'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria'
+     Variety,←'Glabron' 'Glabron' 'Glabron' 'Glabron' 'Glabron' 'Glabron' 'Svansota' 'Svansota' 'Svansota' 'Svansota' 'Svansota'
+     Variety,←'Svansota' 'Velvet' 'Velvet' 'Velvet' 'Velvet' 'Velvet' 'Velvet' 'Trebi' 'Trebi' 'Trebi' 'Trebi' 'Trebi' 'Trebi'
+     Variety,←'No. 457' 'No. 457' 'No. 457' 'No. 457' 'No. 457' 'No. 457' 'No. 462' 'No. 462' 'No. 462' 'No. 462' 'No. 462'
+     Variety,←'No. 462' 'Peatland' 'Peatland' 'Peatland' 'Peatland' 'Peatland' 'Peatland' 'No. 475' 'No. 475' 'No. 475' 'No. 475'
+     Variety,←'No. 475' 'No. 475' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38'
+     Variety,←'Wisconsin No. 38' 'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria' 'Manchuria' 'Glabron' 'Glabron'
+     Variety,←'Glabron' 'Glabron' 'Glabron' 'Glabron' 'Svansota' 'Svansota' 'Svansota' 'Svansota' 'Svansota' 'Svansota' 'Velvet'
+     Variety,←'Velvet' 'Velvet' 'Velvet' 'Velvet' 'Velvet' 'Trebi' 'Trebi' 'Trebi' 'Trebi' 'Trebi' 'Trebi' 'No. 457' 'No. 457'
+     Variety,←'No. 457' 'No. 457' 'No. 457' 'No. 457' 'No. 462' 'No. 462' 'No. 462' 'No. 462' 'No. 462' 'No. 462' 'Peatland'
+     Variety,←'Peatland' 'Peatland' 'Peatland' 'Peatland' 'Peatland' 'No. 475' 'No. 475' 'No. 475' 'No. 475' 'No. 475' 'No. 475'
+     Variety,←'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38' 'Wisconsin No. 38'
+
+     Yield←27 48.87 27.43 39.93 32.97 28.97 43.07 55.2 28.77 38.13 29.13 29.67 35.13 47.33
+     Yield,←25.77 40.47 29.67 25.7 39.9 50.23 26.13 41.33 23.03 26.3 36.57 63.83 43.77 46.93 29.77 33.93 43.27 58.1 28.7 45.67
+     Yield,←32.17 33.6 36.6 65.77 30.37 48.57 24.93 28.1 32.77 48.57 29.87 41.6 34.7 32 24.67 46.77 22.6 44.1 19.7 33.07 39.3
+     Yield,←58.8 29.47 49.87 34.47 31.6 26.9 33.47 34.37 32.97 22.13 22.57 36.8 37.73 35.13 26.17 14.43 25.87 27.43 38.5 35.03
+     Yield,←20.63 16.63 22.23 26.8 37.4 38.83 32.07 32.23 22.47 29.07 49.23 46.63 41.83 20.63 30.6 26.43 42.2 43.53 34.33 19.47
+     Yield,←22.7 25.57 44.7 47 30.53 19.9 22.5 28.07 36.03 43.2 25.23 26.77 31.37 30 41.27 44.23 32.13 15.23 27.37 38 58.17
+     Yield,←47.17 35.9 20.67 29.33
+
+     t←⎕NS''
+     t.Names←'Year' 'Farm' 'Variety' 'Yield'
+     t.Values←⍎¨t.Names
+     t
+ }

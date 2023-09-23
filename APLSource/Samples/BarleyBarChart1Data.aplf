@@ -1,0 +1,9 @@
+ BarleyBarChart1Data←{
+     t←BarleyData 0
+     m←⍉⊃t.Values
+     m←m[;0 1]{⍺,+/⍵}⌸m[;3]
+     m←{(0 1↓6↑⍵),0 2↓6↓⍵}m   ⍝ Kluge!
+     t.Values←↓⍉m
+     t.Names←'Year' '1931' '1932'
+     t
+ }

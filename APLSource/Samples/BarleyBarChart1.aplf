@@ -1,0 +1,10 @@
+ BarleyBarChart1←{
+     p←##.Main.New''
+     p.ChartType←'BarChart'
+     p.Heading←'Barley Yields'
+     p.BarChartStyle←'ForceZero,ExplodeAxes'
+     p.YAxisStyle←'GridLines'
+     p.Gap←0.2
+     p.Colors←'Color.SteelBlue Color.DarkOrange'
+     p
+ }

@@ -1,5 +1,6 @@
  Run←{
      c←(⍎⍵)0
      d←(⍎⍵,'Data')0
-     Display c ##.Main.BuildChart d
+     g←c ##.Main.BuildChart d
+     1:z←g⊣Display g
  }

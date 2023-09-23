@@ -9,7 +9,6 @@
      c.ValueTagFormat←'###0 Units'
      c.Gap←0
      c.GroupGap←0.5
-     c.Colors←'Color.Green Color.Maroon'
      c.XLabelFormat←'Proj-XX'
      c
  }

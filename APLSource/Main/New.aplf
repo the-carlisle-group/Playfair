@@ -1,9 +1,12 @@
  New←{
      p←⎕NS''
      p.ChartType←⍵
-     p.Size←1.5×360 240
+     p.Size←360 240
      p.Multi←0
      p.Scale←'Shadowed'
      p.Select←''
+     p.Colors←'Color.SteelBlue Color.DarkOrange'
+     p.HeadingFont←'Color.SteelBlue'
+     p.AxisStyle←'Color.DarkGray'
      p
  }
