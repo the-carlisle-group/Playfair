@@ -1,8 +1,8 @@
  DrawLineGraph←{
      s←⍵.Chart
      m←⍵.Multi
-     xd←0⊃⍵.Values
-     y←1↓⍵.Values
+     xd←0⊃⍵.SelectedValues
+     y←1↓⍵.SelectedValues
      k←(1<≢y)∧~m
      n←1↓⍵.Names
      c←2=≡xd

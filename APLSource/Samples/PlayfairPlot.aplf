@@ -1,0 +1,22 @@
+ PlayfairPlot←{
+     p←##.Main.New''
+     p.ChartType←'LineGraph'
+     p.LineGraphStyle←'SurfaceShading,ValueTags'
+     p.Margins←'24 36 12 24'
+     p.XAxisStyle←'XAxisStyles.GridLines'
+     p.YAxisStyle←'GridLines,RightAxis'
+     p.HeadingFont←'"Times" 12 FontStyle.Bold Color.Gray'
+     p.GridLineStyle←'Color.LightGray LineStyle.Solid 0.3'
+     p.DatumLineStyle←'Color.LightGray LineStyle.Solid 1.5'
+     p.XTickMarks←'Years'
+     p.YRange←20
+     p.YTickMarks←1  ⍝ Might need to check type, as need to handle name of col
+     p.FillStyles←'FillStyle.Opacity42'
+     p.Heading←'Interest of the NATIONAL DEBT from the Revolution'
+     p.YDatumLines←10
+     p.ValueTags←'Desc'
+     p.ValueFont←'"Times" 6 FontStyle.Regular Color.Red'
+     p.ValueTagStyle←'ValueTagStyles.Vertical'
+     p.Select←'Years,Debt'
+     p
+ }

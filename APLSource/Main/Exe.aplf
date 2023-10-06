@@ -3,7 +3,7 @@
      ⍝ ⍵ ←→ Name, Value
      n v←⍵
      n t←⍺ GetType n
-     (⊂n)∊'SplitBy' 'GroupBy' 'SetValueTags':⍺ ApplyMethod n(⍺ GetColumn v)
+     (⊂n)∊'SplitBy' 'GroupBy' 'SetValueTags' 'SetXTickMarks':⍺ ApplyMethod n(⍺ GetColumn v)
      t=0:0
      t=1:⍺ SetEnumProperty n v
      t=2:⍺ SetProperty n v
