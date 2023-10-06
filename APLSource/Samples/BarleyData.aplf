@@ -47,5 +47,6 @@
      t←⎕NS''
      t.Names←'Year' 'Farm' 'Variety' 'Yield'
      t.Values←⍎¨t.Names
+     t.Formats←'I4' '' '' 'F10.2'
      t
  }

@@ -1,11 +1,11 @@
  BarleyBarChart2←{
      p←##.Main.New''
+     p.Size←1.1×p.Size
      p.ChartType←'BarChart'
-     p.Heading←'Barley Yields with Tidy Data'
+     p.Heading←'Barley Yields from Long-Form Data'
      p.BarChartStyle←'ForceZero,ExplodeAxes'
      p.YAxisStyle←'GridLines'
-     p.Gap←0.2
-     p.Colors←'Color.SteelBlue Color.DarkOrange'
+     p.Gap←0
      p.Select←'Farm,Yield'
      p.SplitBy←'Year'
      p.GroupBy←'Farm'

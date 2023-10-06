@@ -1,10 +1,12 @@
  BarleyBarChart1←{
      p←##.Main.New''
+     p.Size←1.1×p.Size
      p.ChartType←'BarChart'
-     p.Heading←'Barley Yields'
+     p.Heading←'Barley Yields from Wide-Form Data'
      p.BarChartStyle←'ForceZero,ExplodeAxes'
      p.YAxisStyle←'GridLines'
-     p.Gap←0.2
+     p.Gap←0
      p.Colors←'Color.SteelBlue Color.DarkOrange'
+
      p
  }

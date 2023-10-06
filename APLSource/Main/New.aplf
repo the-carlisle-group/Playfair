@@ -5,8 +5,11 @@
      p.Multi←0
      p.Scale←'Shadowed'
      p.Select←''
-     p.Colors←'Color.SteelBlue Color.DarkOrange'
-     p.HeadingFont←'Color.SteelBlue'
+     p.Colors←'Color.SteelBlue Color.DarkOrange Color.DarkGray Color.Gold'
+     p.Colors,←' Color.DarkSeaGreen Color.LightCoral'
+     p.HeadingFont←'Color.Gray'
      p.AxisStyle←'Color.DarkGray'
+     p.BarChartStyle←'ForceZero,ExplodeAxes'
+     p.EdgeStyle←0
      p
  }

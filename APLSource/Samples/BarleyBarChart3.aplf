@@ -1,0 +1,12 @@
+ BarleyBarChart3←{
+     p←##.Main.New''
+     p.ChartType←'BarChart'
+     p.Heading←'Barley Yields by Farm and Year'
+     ⍝ p.MarginLeft←100
+     p.YAxisStyle←'GridLines'
+     p.Gap←0
+     p.Select←'Farm,Yield'
+     p.SplitBy←'Farm'
+     p.GroupBy←'Year'
+     p
+ }
