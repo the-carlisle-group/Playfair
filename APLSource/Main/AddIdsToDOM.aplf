@@ -1,0 +1,18 @@
+ AddIdsToDOM←{
+     ⍝ ⍵ ←→ DOM
+     ⍝ Crude Technique that relies on comments
+     ⍝ Will not work if AddAttributes is used in certain circumastances
+     ⍝ ... as additional elements are inserted.
+     ⍝ Works only on basic bar chart with one series
+     A←#.Abacus.Main
+     e←A.Elements ⍵
+     n←'xlabel' 'ylabel' 'value' 'point'
+     v←'for X-axis labels' 'Y-axis labels' 'Data value labels ...'('Start of Horizontal Barchart ',11⍴'=')
+     ⍵⊣n{
+         p←⊃e A.ElementsWhere'Content'⍵
+         c←(e⊃⍨1+e⍳p).Content
+         c.class←⊂⍺
+         c.id←⍺∘,¨⍕¨⍳≢c
+         0
+     }¨v
+ }

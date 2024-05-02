@@ -1,0 +1,18 @@
+ FocusExample←{
+     ⎕THIS.A←#.Abacus.Main
+     c←BarleyBarChart1''
+     d←BarleyBarChart1Data''
+     v←c ##.Main.BuildChart d
+     s←A.HTML2DOM v
+     ⍝ s.tabindex←0
+     ⍝ s.autofocus←''
+     d←A.NewDocument''
+     d.Caption←'SVG Focus'
+     b←A.GetBody d
+     h1←b A.New'h1' 'Test Setting Focus'
+     h1.tabindex←0
+     h1.autofocus←''
+     h2←b A.New'h2' 'On SVG Element'
+     b.Content,←s
+     A.NewForm d
+ }

@@ -1,0 +1,19 @@
+ DrawXBarChart←{
+     s←⍵.Chart
+     m←⍵.Multi
+     x←1↑⍵.SelectedValues
+     y←1↓⍵.SelectedValues
+     n←1↓⍵.SelectedNames
+     k←(1<≢y)∧~m
+     u←0=⍵.⎕NC'GroupBy'
+     h←∨/'Horizontal'⍷⍵.XBarChartStyle
+     ⍝ _←s.SetXLabels do⊂x/⍨u∧~h
+     ⍝ _←s.SetYLabels do⊂x/⍨u∧h
+     ⍝ _←s.SetKeyText do⊂k/n
+     ⍝ _←s.SetPageLabels do⊂m/n
+     _←SetState ⍵
+     m:s.DrawMultiple do ⍵.Causeway.ChartType.XBarChart y
+     _←s.SetXTickMarks do⊂1+⍳≢0⊃y
+     s.Gap←0
+     s.DrawXBarChart do(0⊃y)(1+⍳≢0⊃y)
+ }

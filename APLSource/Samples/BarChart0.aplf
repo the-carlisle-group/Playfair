@@ -1,0 +1,8 @@
+ BarChart0←{
+     c←##.Main.New 0
+     c.ChartType←'BarChart'
+     c.Heading←'Basic Bar Chart'
+     c.BarChartStyle←'ValueTags,ForceZero'
+     c.ValueFont←'"Arial" 10 FontStyle.Bold'
+     c
+ }

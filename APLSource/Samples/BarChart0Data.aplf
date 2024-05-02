@@ -1,0 +1,7 @@
+ BarChart0Data←{
+     v←⊂'Region'('North' 'South' 'East' 'West')
+     v,←⊂'Sales'(2300 1989 1250 9887)
+     d←⎕NS''
+     d.(Names Values)←↓⍉↑v
+     d
+ }

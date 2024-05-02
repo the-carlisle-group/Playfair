@@ -1,0 +1,12 @@
+ AddIds←{
+
+     ⎕USING,←⊂'Causeway,sharpplot.dll'
+     p←⍵
+     n←≢⊃p.Values
+     i←⍕¨⍳n
+     _←p.Chart.AddAttributes do'id'('point'∘,¨i)
+     _←p.Chart.AddAttributes do ScriptTarget.XLabels'myid'('xlabel'∘,¨i)
+     _←p.Chart.AddAttributes do ScriptTarget.YLabels'myid'('ylabel'∘,¨i)
+     _←p.Chart.AddAttributes do ScriptTarget.Values'myid'('value'∘,¨i)
+     0
+ }

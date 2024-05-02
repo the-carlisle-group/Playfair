@@ -11,5 +11,6 @@
      p.AxisStyle←'Color.DarkGray'
      p.BarChartStyle←'ForceZero,ExplodeAxes'
      p.EdgeStyle←0
+     p.Attributes←''
      p
  }
