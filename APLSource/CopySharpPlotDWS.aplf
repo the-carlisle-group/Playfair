@@ -3,8 +3,8 @@
      _←'Causeway'⎕NS''
      Causeway.⎕IO←1
      Causeway.⎕ML←1
-     _←Causeway.⎕CY'sharpplot.dws'
-     ⎕←'Causeway copied in.'
+     af←AcreConfig.ProjectFolder,'Assets/Runtime/'
+     _←Causeway.⎕CY af,'sharpplot.dws'
      ⍝ What can we safely delete?
      c←Causeway
      _←c.⎕EX¨'InitCauseway' 'View' ⍝ Root fns
