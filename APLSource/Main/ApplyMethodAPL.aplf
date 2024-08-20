@@ -1,0 +1,9 @@
+ ApplyMethodAPL←{
+     n v←⍵
+     f←⍎'⍺.Chart.',n
+     a←⍺ EvalAPL v
+     ⍝ 0::stop ⍝ 0⊣⎕←'Fail on: ',n,' ',⍕a
+     _←f do a
+     0
+     ⍝ 0⊣⎕←'Success on: ',n,' ',⍕a
+ }

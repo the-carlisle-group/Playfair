@@ -1,0 +1,4 @@
+ ProfileSharpPlot←{
+     d←⎕PROFILE'data'
+     ∪3⊃¨{('.'≠⍵)⊆⍵}¨{⍵/⍨'#.Playfair.Causeway.'∘≡¨20↑¨⍵}d[;0]
+ }

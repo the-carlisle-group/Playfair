@@ -1,0 +1,19 @@
+ BuildChartAPL←{
+     ⍝ ⍺ ←→ Chart
+     ⍝ ⍵ ←→ Data
+     ⍝ ← ←→ SVG
+     p←⎕NS ⍺
+     p.UseAPL←1
+     p.Names←⍵.Names
+     p.Values←⍵.Values
+     _←##.InitCauseway p
+     p.Chart←p.⎕NEW p.Causeway.SharpPlot p.Size
+     p.PropertyList←p.Chart.⎕NL ¯2
+     p.EnumPropertyList←¯1↓¨GetEnumPropList 0
+     p.MethodList←p.Chart.⎕NL ¯3
+     _←{0=≢p.Attributes:0 ⋄ p.Chart.AddAttributes do¨p.Attributes}0
+     ⍝ _←AddIds p
+     _←Select p
+     _←(⍎'Draw',p.ChartType)p
+     p.(Chart.RenderSvg Causeway.SvgMode⍎Scale)
+ }

@@ -7,8 +7,8 @@
      k←(1<≢y)∧~m
      u←0=⍵.⎕NC'GroupBy'
      h←∨/'Horizontal'⍷⍵.BarChartStyle
-     _←s.SetXLabels do⊂x/⍨u∧~h
-     _←s.SetYLabels do⊂x/⍨u∧h
+     _←{0=≢⍵:0 ⋄ s.SetXLabels do⊂⍵}x/⍨u∧~h
+     _←{0=≢⍵:0 ⋄ s.SetYLabels do⊂⍵}x/⍨u∧h
      _←s.SetKeyText do⊂k/n
      _←s.SetPageLabels do⊂m/n
      _←SetState ⍵

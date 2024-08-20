@@ -1,0 +1,7 @@
+ InitCauseway←{
+     ⍝ Make references in ns ⍵ to Causeway stuff
+     ⍵.Causeway←Causeway
+     ⍵.System←Causeway
+     ⍵.System.Drawing←Causeway
+     0
+ }

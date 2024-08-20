@@ -1,0 +1,80 @@
+ ClassesToKeep←{
+     z←''
+     ⍝ Stuff that ⎕PROFILE catches
+     z,←'ArrayList' 'psb' 'StringBuilder' 'svg'
+     z,←'Stack' 'Common' 'ColorTranslator' 'Document'
+     z,←'SharpPlot' 'vscan' 'Double'
+
+     ⍝ Other stuff
+     z,←'Color' 'PaperSize'
+     z,←'FontStyle' 'SvgMode' 'PageMode'
+     z,←'FillStyle' 'LineStyle'
+
+     ⍝ Structs
+     z,←⊂'HotspotInfo'
+     z,←⊂'KeyDefinition'
+     z,←⊂'Marker'
+     z,←⊂'Zone'
+
+     ⍝ Enumerations
+     z,←⊂'BarChartStyles'
+     z,←⊂'BoxPlotStyles'
+     z,←⊂'BubbleChartStyles'
+     z,←⊂'CaptionStyles'
+     z,←⊂'ChartType'
+     z,←⊂'CloudChartStyles'
+     z,←⊂'ContourPlotStyles'
+     z,←⊂'DataStyles'
+     z,←⊂'DatumTagStyles'
+     z,←⊂'DialChartStyles'
+     z,←⊂'EquationStyles'
+     z,←⊂'FootnoteStyles'
+     z,←⊂'FrameStyles'
+     z,←⊂'GanttChartStyles'
+     z,←⊂'GroupByFunction'
+     z,←⊂'HeadingStyles'
+     z,←⊂'HistogramStyles'
+     z,←⊂'HotspotType'
+     z,←⊂'IAxisStyles'
+     z,←⊂'ITickStyles'
+     z,←⊂'KeyStyles'
+     z,←⊂'LabelStyles'
+     z,←⊂'LineGraphStyles'
+     z,←⊂'MinMaxChartStyles'
+     z,←⊂'NoteStyles'
+     z,←⊂'ParityStyles'
+     z,←⊂'PieChartStyles'
+     z,←⊂'PolarChartStyles'
+     z,←⊂'ResetOptions'
+     z,←⊂'ResponsePlotStyles'
+     z,←⊂'ScalebarStyles'
+     z,←⊂'ScatterPlotStyles'
+     z,←⊂'ScriptTarget'
+     z,←⊂'StepChartStyles'
+     z,←⊂'TableStyles'
+     z,←⊂'TowerChartStyles'
+     z,←⊂'TraceChartStyles'
+     z,←⊂'TreeMapStyles'
+     z,←⊂'TrellisStyles'
+     z,←⊂'TriangleStyles'
+     z,←⊂'ValueTagStyles'
+     z,←⊂'VectorStyles'
+     z,←⊂'VennDiagramStyles'
+     z,←⊂'XAxisStyles'
+     z,←⊂'XBarChartStyles'
+     z,←⊂'XTickStyles'
+     z,←⊂'YAxisStyles'
+     z,←⊂'YTickStyles'
+     z,←⊂'ZAxisStyles'
+     z,←⊂'ZoneStyles'
+     z,←⊂'ZTickStyles'
+     z,←⊂'NetworkMapStyles'
+     e←Causeway.⎕NL ¯9
+     ⎕←'Class name typos: ',⍕(~z∊e)/z
+     ⎕←'Duplicated names: ',⍕z/⍨~≠z
+     ⎕←'Classes to be deleted: ',⍕e~z
+     ⎕←'Total number of classes: ',≢e
+     ⎕←'Keep: ',≢z
+     ⎕←'Delete: ',≢e~z
+     z
+ }

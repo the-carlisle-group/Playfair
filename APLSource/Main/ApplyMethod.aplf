@@ -1,7 +1,8 @@
  ApplyMethod←{
+     ⍺.UseAPL:⍺ ApplyMethodAPL ⍵
      n v←⍵
      f←⍎'⍺.Chart.',n
-     a←Eval v
+     a←⍺ Eval v
      ⍝ If simple string, better test to enclose?
      ⍝ If simple numeric vec?
      5 11::f do⊂a

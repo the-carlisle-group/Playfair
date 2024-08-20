@@ -1,0 +1,17 @@
+ CopySharpPlotDWS←{
+     _←⎕EX'Causeway'
+     _←'Causeway'⎕NS''
+     Causeway.⎕IO←1
+     Causeway.⎕ML←1
+     _←Causeway.⎕CY'sharpplot.dws'
+     ⎕←'Causeway copied in.'
+     ⍝ What can we safely delete?
+     c←Causeway
+     _←c.⎕EX¨'InitCauseway' 'View' ⍝ Root fns
+     _←c.⎕EX¨'Abstract' 'Release'  ⍝ Root vars
+     ⍝ **************************
+     k←ClassesToKeep''
+     ⍝ Erase all but
+     _←c.⎕EX¨k~⍨c.⎕NL ¯9
+     0
+ }

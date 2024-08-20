@@ -1,0 +1,5 @@
+ DisplayAPL←{
+     h←'hrAPL'⎕WC'HTMLRenderer'
+     hrAPL.HTML←⍵
+     0
+ }

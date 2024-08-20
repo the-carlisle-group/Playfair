@@ -7,7 +7,7 @@
      p.Select←''
      p.Colors←'Color.SteelBlue Color.DarkOrange Color.DarkGray Color.Gold'
      p.Colors,←' Color.DarkSeaGreen Color.LightCoral'
-     p.HeadingFont←'Color.Gray'
+     p.HeadingFont←'"TimesNewRoman" 20 FontStyle.Regular Color.Gray'
      p.AxisStyle←'Color.DarkGray'
      p.BarChartStyle←'ForceZero,ExplodeAxes'
      p.EdgeStyle←0

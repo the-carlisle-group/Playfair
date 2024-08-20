@@ -3,6 +3,7 @@
      ⍝ ⍵ ←→ Data
      ⍝ ← ←→ SVG
      p←⎕NS ⍺
+     p.UseAPL←0
      p.Names←⍵.Names
      p.Values←⍵.Values
      p.⎕USING←,⊂',sharpplot.dll'

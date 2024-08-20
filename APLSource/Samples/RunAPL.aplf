@@ -1,0 +1,7 @@
+ RunAPL←{
+     c←(⍎⍵)0
+     d←(⍎⍵,'Data')0
+     g←c ##.Main.BuildChartAPL d
+     ⎕←'Length of svg: ',⍕≢g
+     1:z←g⊣DisplayAPL g
+ }
