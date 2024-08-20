@@ -1,4 +1,7 @@
-# Playfair Release 0.0.0                    
+# Playfair Release 0.0.1                    
+1. Update sharpplot dws location
+
+# Playfair Release 0.0.0 2024-08-20 09:52:45
 1. Switch to APL instead of dll.
 2. Add ids to chart elements
 3. Add Playfair plot to samples
